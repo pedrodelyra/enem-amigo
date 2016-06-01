@@ -17,4 +17,5 @@ rvm gemset use --default rails4
 git clone https://github.com/pedrodelyra/enem-amigo.git
 sudo chmod -R 777 enem-amigo/
 cd enem-amigo
+sudo gem install bundler
 bundle install
