@@ -1,8 +1,8 @@
-server '107.170.51.246', port: 80, roles: [:web, :app, :db], primary: true
+server '107.170.95.84', port: 80, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@github.com:mateusmanuel/enem-amigo.git'
+set :repo_url,        'git@github.com/pedrodelyra/enem-amigo.git'
 set :application,     'enem-amigo'
-set :user,            'demo'
+set :user,            'droplet-gcs'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
