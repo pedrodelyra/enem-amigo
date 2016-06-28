@@ -1,0 +1,15 @@
+Source: enem-amigo
+Section: unknown
+Priority: optional
+Maintainer: Pedro de Lyra <pedro@debian>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/enem-amigo.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/enem-amigo.git;a=summary
+
+Package: enem-amigo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

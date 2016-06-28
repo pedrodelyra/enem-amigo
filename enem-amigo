@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_path=$(pwd)
+
+cd ~/enem-amigo-1.0/
+
+bundle install
+bundle exec rake db:migrate
+bundle exec rails server
+
+cd $current_path
