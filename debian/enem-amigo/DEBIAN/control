@@ -2,7 +2,7 @@ Package: enem-amigo
 Version: 1.0-1
 Architecture: amd64
 Maintainer: Pedro de Lyra <pedro@debian>
-Installed-Size: 27
+Installed-Size: 13751
 Section: unknown
 Priority: optional
 Homepage: <insert the upstream URL, if relevant>
