@@ -2,10 +2,17 @@
 
 current_path=$(pwd)
 
-cd ~/enem-amigo-1.0/
+cd /etc
 
-bundle install
-bundle exec rake db:migrate
+if [ -e enem-amigo_1.0.orig.tar.gz ]; then
+	sudo tar xzf enem-amigo_1.0.orig.tar.gz
+	sudo rm enem-amigo_1.0.orig.tar.gz
+fi
+
+cd enem-amigo_1.0
+
+bundle install > /dev/null
+bundle exec rake db:migrate > /dev/null
 bundle exec rails server
 
 cd $current_path

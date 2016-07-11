@@ -1,6 +1,10 @@
-bindir = /usr/local/bin
-srcdir = /home/*/
+bindir = /usr/bin
+srcdir = /etc
 
 install:
-	install enem-amigo $(bindir)
-	cp -rp ../enem-amigo-1.0 $(srcdir)
+	mkdir debian/enem-amigo
+	mkdir debian/enem-amigo/usr
+	mkdir debian/enem-amigo/usr/bin
+	mkdir debian/enem-amigo/etc
+	install enem-amigo $(DESTDIR)$(bindir)
+	install ../enem-amigo_1.0.orig.tar.gz $(DESTDIR)$(srcdir)
